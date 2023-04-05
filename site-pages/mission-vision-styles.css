@@ -1,0 +1,110 @@
+
+
+body {
+    overflow:visible
+}
+
+#wrapper section {
+    margin-top: 5em;
+    margin-bottom: 15em;
+}
+
+#mission h1, #vision h1, #code-of-conduct h1{
+    display: grid;
+    place-content: center;
+    color: #FF445A;
+    font-size: 3em;
+    border-bottom: solid 1px #FF445A;
+    border-image: radial-gradient(#FF445A, #FF445A, #282634) 1;
+    -webkit-font-smoothing: antialiased
+}
+
+ p {
+    font-size: 1.5em;
+    padding: 2em;
+    text-align: justify;
+}
+
+li {
+
+    font-size: 1.3em;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+
+b {
+    color: #ff445ad5;
+
+}
+
+.hidden{
+    display: block;
+    border: none;
+    opacity: 0;
+    filter: blur(2px);
+    transform: none;
+    transition:  1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+}
+
+@media only screen and (min-width: 1em) and (max-width: 50em){
+
+
+
+    p {
+        font-size: 1.5em;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+       
+    }
+
+    ol {
+       padding: 0;
+    }
+
+    li {
+        width: fit-content;
+        font-size: 1em;
+        text-align: left;
+        word-spacing: 0.5em;
+        padding: 1em 0;
+    }
+
+    b{
+        display: block;
+    }
+
+
+    #mission h1, #vision h1, #code-of-conduct h1{
+        font-size: 2em;
+    }
+
+    #code-of-conduct h1{
+        font-size: 1.8em
+    }
+
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: none;
+
+        
+    }
+
+}

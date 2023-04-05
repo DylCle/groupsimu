@@ -1,0 +1,286 @@
+
+
+
+body {
+    background-color: #282634;
+    font-family: 'Varela Round', sans-serif;
+    color: #9A9A9D;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 25em;
+    position: relative;
+    top: .5em;
+}
+
+#main{
+    margin-bottom: 15em;
+}
+
+#main-img {
+    width: 100%;
+    pointer-events: none;
+    margin-bottom: 2em;
+}
+
+
+
+
+#page-links a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #9A9A9D;
+    padding: 2.7em 1em 0 1em;
+    float: right;
+}
+
+/*
+#grid-container {
+    display: grid;
+
+    grid-template-columns: 100%;
+    width: 100%;
+}
+*/
+
+
+#row1, #row2, #row3{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 15em;
+    
+}
+
+.service-header{
+    color: #FF445A;
+    opacity: 80%;
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-size: medium;
+    width: 40%;
+  
+
+}
+
+.img-header{
+    display: grid;
+    place-items: center;
+    align-content: center;
+
+}
+
+
+#pc-icon{
+    width: 5.5em;
+    margin-left: 1.5em;
+   
+
+}
+
+#cloud-icon{
+    width: 4.5em;
+
+}
+
+#mobile-icon{
+    width: 3.2em;
+ 
+
+}
+.service-paragraph {
+    border: solid 2px #ff445ab9;
+  
+   font-size: large;
+    text-align: center;
+}
+
+#row1 p {
+ border-radius: 5px;
+ padding: 2% 15%;
+ width: 45%;
+}
+
+#row2 p {
+    border-radius: 5px;
+    padding: 2% 15%;
+    width: 45%;
+   }
+
+#row3 p {
+ border-radius: 5px;
+ padding: 2% 15%;
+ width: 45%;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+   transform: translateY(+100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translatey(0);
+}
+
+@media only screen and (min-width:50.1em) and (max-width: 208.9em){
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #282634; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #ff445ab9; 
+        border-radius: 3px;
+    
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ff445ab9; 
+      }
+    
+    
+    }
+@media only screen and (min-width: 1em) and (max-width: 50em){
+    #wrapper{
+        overflow: hidden; 
+        width: 99%;
+        margin: 0 auto;
+    }
+
+  
+
+  #page-links{
+    position: fixed;
+    background-color: #282634;
+    padding-right: 15em;
+    padding-bottom: 1em;
+    z-index: 10;
+    top: -2em;
+    border-bottom: 2px solid rgb(31, 31, 31);
+    border-radius: 10px;
+  }
+
+  #logo {
+    width:60%;
+    position: fixed;
+    right: -2em;
+    z-index: 11;
+    top: -1.8em;
+    margin-top: 2em;
+    
+  }
+
+    #row1, #row2, #row3{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 2em;
+    }    
+
+    .service-header{
+        width: 80%;
+        
+    }
+
+    #pc-icon{
+        width: 4.7em;
+        margin-left: 0;
+       
+    
+    }
+    
+    #cloud-icon{
+        width: 4.5em;
+    
+    }
+    
+    #mobile-icon{
+        width: 3.2em;
+     
+    
+    }
+
+    #row1 p, #row2 p, #row3 p{
+       width: fit-content;
+    }
+
+    header{
+        font-size: medium;
+        text-decoration: none;
+        color: #9A9A9D;
+        padding: 0;
+        float: left;
+     
+    }
+    #main{
+        clear: both;
+        margin: 0 auto 0.5em auto;
+    }
+
+    #main-img {
+        margin-top: 4em;
+
+        width: 30em;
+   
+    }
+
+ 
+    #page-links  {
+       clear: both;
+       display: grid;
+       grid-template-columns: 30% 20% 20%;
+       font-size: 10px;
+    }
+
+    .hidden{
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    .show{
+        opacity: 1;
+    }
+
+
+}
+
+
+/*----FOR ULTRA WIDE DISPLAYS-----*/
+@media only screen and (min-width: 109em){
+    #wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .service-paragraph {
+        width: 60%;
+        margin-left: 15%;
+    }
+
+    #row2 h3{
+        margin-left: 5.5em;
+        text-align: center;
+       
+    }
+}
